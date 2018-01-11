@@ -25,9 +25,9 @@ ASP.NET MVC-Aktionen unterstützen das Hochladen von einer oder mehreren Dateien
 
 [Anzeigen oder Herunterladen des Beispiels von GitHub](https://github.com/aspnet/Docs/tree/master/aspnetcore/mvc/models/file-uploads/sample/FileUploadSample)
 
-## <a name="uploading-small-files-with-model-binding"></a>Hochladen von kleine Dateien mit modellbindung
+## <a name="uploading-small-files-with-model-binding"></a>Hochladen von kleinen Dateien mit Modellbindung
 
-Um kleine Dateien hochzuladen, können Sie eine mehrteilige HTML-Formular oder eine POST-Anforderung, die mit JavaScript zu erstellen. Ein Beispiel-Formulars mit Razor, die mehrere hochgeladene Dateien unterstützt, wird unten gezeigt:
+Um kleine Dateien hochzuladen, können Sie ein mehrteiliges HTML-Formular oder eine POST-Anforderung, die mit JavaScript zu erstellen. Ein Beispiel-Formulars mit Razor, die mehrere hochgeladene Dateien unterstützt, wird unten gezeigt:
 
 ```html
 <form method="post" enctype="multipart/form-data" asp-controller="UploadFiles" asp-action="Index">
@@ -45,7 +45,7 @@ Um kleine Dateien hochzuladen, können Sie eine mehrteilige HTML-Formular oder e
 </form>
 ```
 
-Damit Dateiuploads unterstützt wird, müssen die HTML-Formularen angeben einer `enctype` von `multipart/form-data`. Die `files` input-Element oben gezeigten unterstützt mehrere Dateien hochladen. Lassen Sie die `multiple` Attribut für dieses Element input, nur eine einzelne Datei hochgeladen werden können. Die oben genannten Markup rendert in einem Browser als:
+Damit Dateiuploads unterstützt werden, muss in den HTML-Formularen das Attribut `enctype` mit dem Wert `multipart/form-data` angegeben werden. Das `files` input-Element im Beispiel unterstützt das Hochladen von mehreren Dateien.Entfernen Sie das Attribut `multiple`  für dieses Element input, kann nur eine einzelne Datei hochgeladen werden. Das oben gezeigte Markup rendert in einem Browser als:
 
 ![Dateiupload-Formular](file-uploads/_static/upload-form.png)
 
